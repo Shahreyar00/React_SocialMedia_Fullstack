@@ -1,0 +1,121 @@
+.register{
+    min-height: 100vh;
+    background-color: rgb(193, 190, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+
+    .card{
+        width: 80%;
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+
+        @media screen and (max-width:850px) {
+            flex-direction: column;
+            width: 90%;
+        }
+
+        .left {
+            flex: 1;
+            background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)),
+                url("https://images.pexels.com/photos/4881619/pexels-photo-4881619.jpeg?auto=compress&cs=tinysrgb&w=1600")
+                center;
+            background-size: cover;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            color: white;
+            
+            @media screen and (max-width:850px) {
+                padding: 30px;
+                gap: 20px;
+            }
+    
+            h1 {
+                font-size: 60px;
+                line-height: 80px;
+
+                @media screen and (max-width:950px) {
+                    font-size: 40px;
+                    line-height: 60px;
+                }
+            }
+    
+            span {
+                font-size: 14px;
+                font-weight: bold;
+            }
+            
+            button {
+                width: 50%;
+                padding: 10px;
+                border-radius: 10px;
+                border: none;
+                background-color: white;
+                color: rebeccapurple;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+
+        .right {
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            justify-content: center;
+
+            @media screen and (max-width:850px) {
+                padding: 30px;
+                gap: 20px;
+            }
+    
+            h1 {
+                color: #555;
+
+                @media screen and (max-width:850px) {
+                    font-size: 22px;
+                }
+            }
+            
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                @media screen and (max-width:850px) {
+                    gap: 20px;
+                }
+                
+                input {
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid lightgray;
+                    padding: 10px;
+                    font-size: 16px;
+
+                    @media screen and (max-width:850px) {
+                        font-size: 14px;
+                    }
+                }
+                
+                button {
+                    width: 50%;
+                    padding: 10px;
+                    border: none;
+                    background-color: #938eef;
+                    color: white;
+                    font-weight: bold;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
