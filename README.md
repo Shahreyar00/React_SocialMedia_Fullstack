@@ -1,4 +1,4 @@
-# This repository contains code for React fullstack social media application.
+### This repository contains code for React fullstack social media application.
 
 You have to add following file (connect.js):
 ````
