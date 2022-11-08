@@ -1,6 +1,6 @@
 ### This repository contains code for React fullstack social media application.
 
-You have to add following file (connect.js):
+You have to add following file (connect.js) in the client src folder:
 ````
 import mysql from "mysql";
 
